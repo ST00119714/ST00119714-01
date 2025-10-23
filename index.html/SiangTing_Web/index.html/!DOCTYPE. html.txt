@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>翔廷建設股份有限公司</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", sans-serif;
+      background-color: #f8faf9;
+      color: #333;
+      line-height: 1.7;
+    }
+    header {
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 55px;
+    }
+    header h1 {
+      font-size: 1.4rem;
+      color: #264b3c;
+      margin: 0;
+    }
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+    h2 {
+      color: #264b3c;
+      border-left: 5px solid #9bc6b0;
+      padding-left: 0.6rem;
+      font-weight: 600;
+      margin-top: 2rem;
+    }
+    p {
+      font-size: 1.05rem;
+      color: #444;
+    }
+    .about {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .about img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-top: 1rem;
+    }
+    .works {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .work-item {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .work-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+    .work-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .work-content {
+      padding: 1rem;
+    }
+    .work-content h3 {
+      margin: 0 0 0.5rem;
+      color: #264b3c;
+    }
+    .work-content p {
+      margin: 0;
+      color: #666;
+    }
+    .contact-btn {
+      display: block;
+      width: fit-content;
+      margin: 3rem auto 0;
+      background-color: #264b3c;
+      color: white;
+      font-size: 1.1rem;
+      padding: 0.9rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.25s ease;
+    }
+    .contact-btn:hover {
+      background-color: #3b6a56;
+    }
+    footer {
+      background-color: #264b3c;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <img src="logo.jpg" alt="翔廷建設LOGO">
+      <h1>翔廷建設股份有限公司</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>關於翔廷建設</h2>
+      <p>以誠信、品質、溫度為核心，翔廷建設致力於打造兼具人文與自然的宜居住宅，  
+      讓每一個家都能成為幸福生活的起點。</p>
+      <img src="about.jpg" alt="公司形象照">
+    </section>
+
+    <section class="works">
+      <h2>作品集</h2>
+
+      <!-- 晴川居 -->
+      <a href="qingchuan.html" class="work-item">
+        <img src="work1.jpg" alt="晴川居">
+        <div class="work-content">
+          <h3>晴川居</h3>
+          <p>鄰英明國中對面，2～3 房住宅，近輕軌與學區。</p>
+        </div>
+      </a>
+
+      <!-- 可日後新增更多作品 -->
+      <div class="work-item">
+        <img src="work2.jpg" alt="未來建案預留">
+        <div class="work-content">
+          <h3>新建案 Coming Soon</h3>
+          <p>敬請期待翔廷建設下一座城市亮點。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 📩 聯絡我們按鈕 -->
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdewmbKp79pMYQ6xvF1EEr1URTpAF1d5hdn-5QxMjEbFGryA/viewform?embedded=true"
+       target="_blank" class="contact-btn">📩 聯絡我們 / 預約賞屋</a>
+  </main>
+
+  <footer>
+    翔廷建設股份有限公司 © 2025 All Rights Reserved
+  </footer>
+</body>
+</html>
